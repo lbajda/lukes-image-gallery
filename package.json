@@ -7,9 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Luke Bajda",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.10.2"
+    "parcel": "latest"
   }
 }
