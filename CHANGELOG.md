@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/lbajda/lukes-image-gallery/compare/v1.0.0...v1.1.0) (2023-11-04)
+
+
+### Features
+
+* **main:** :construction: create 7 files and update 3 files ([6883ef6](https://github.com/lbajda/lukes-image-gallery/commit/6883ef665f9f602ed82921820b6d89a632e5da18))
+
 ## 1.0.0 (2023-11-04)
 
 
