@@ -7,7 +7,10 @@
   "author": "Luke Bajda",
   "main": "index.js",
   "scripts": {
-    "serve": "parcel serve --target development --open chrome"
+    "serve": "parcel serve --target development --open chrome",
+    "build": "parcel build  --target production --public-url ./",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -29,6 +32,7 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.10.2",
     "autoprefixer": "^10.4.16",
+    "gh-pages": "^6.0.0",
     "lodash": "^4.17.21",
     "parcel": "latest",
     "postcss": "^8.4.31",
@@ -38,6 +42,10 @@
   "targets": {
     "development": {
       "source": "src/index.html"
+    },
+    "production": {
+      "source": "src/index.html",
+      "distDir": "build"
     }
   }
 }
