@@ -1,0 +1,52 @@
+/**
+ * 
+ * This file contains the base, components, and utilities styles for the Tailwind CSS framework.
+ * It also includes custom styles for the Inter font family and several component classes such as .btn, .btn-primary, .default-input, and .img-cover.
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: 'Inter', sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url('./Inter/Inter-roman.var.woff2?v=3.19') format('woff2');
+}
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url('./Inter/Inter-italic.var.woff2?v=3.19') format('woff2');
+}
+
+@layer components {
+  .btn {
+    @apply px-5 py-2.5 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-medium text-base outline-none transition-all duration-300 focus:outline-none focus:ring-4;
+    @apply ring-opacity-75 !important;
+  }
+
+  .btn-primary {
+    @apply bg-indigo-500 text-white hover:text-white hover:bg-indigo-700 focus:ring-indigo-300 dark:bg-indigo-200 dark:hover:bg-indigo-300 dark:text-indigo-700 dark:hover:text-indigo-900 dark:focus:ring-indigo-300;
+  }
+
+  .default-input {
+    @apply py-3 px-4 block w-full rounded-md text-sm outline-none transition-all duration-300 border border-gray-200 text-gray-500 focus:border-gray-300/75 focus:outline-none focus:ring-4 focus:ring-gray-300 focus:!ring-opacity-75;
+  }
+
+  .img-cover {
+    @apply object-cover w-full h-full;
+  }
+}
