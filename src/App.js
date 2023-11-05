@@ -1,7 +1,11 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react'
 import { debounce } from 'lodash'
-import Image from './components/Image'
-import SearchForm from './components/SearchForm'
+
+const Image = React.memo(({ src, alt }) => (
+  <div>
+    <img className='img-cover aspect-[3/4]' src={src} alt={alt} />
+  </div>
+))
 
 /**
  * The main component of the image gallery app.
@@ -30,7 +34,6 @@ const App = () => {
         setState((prevState) => ({
           ...prevState,
           res: [...prevState.res, ...result],
-          page: prevState.page + 1,
         }))
       } else {
         setState((prevState) => ({ ...prevState, hasMore: false }))
@@ -72,15 +75,25 @@ const App = () => {
     <>
       <div className='container mx-auto'>
         <div className='flex items-center justify-center flex-col'>
-          <SearchForm
-            img={state.img}
-            handleFormSubmit={handleFormSubmit}
-            handleInputChange={handleInputChange}
-          />
+          <form
+            onSubmit={handleFormSubmit}
+            className='flex justify-center items-center gap-2 py-4 mt-4'>
+            <input
+              id='searchInput'
+              className='default-input'
+              type='text'
+              placeholder='Search Anything...'
+              value={state.img}
+              onChange={handleInputChange}
+            />
+            <button type='submit' className='btn btn-primary'>
+              Search
+            </button>
+          </form>
           <div className='grid grid-cols-3 gap-4'>
-            {state.res.map((val) => (
+            {state.res.map((val, index) => (
               <Image
-                key={val.id}
+                key={`${val.id}-${index}`}
                 src={val.urls.small}
                 alt={val.alt_description}
               />
