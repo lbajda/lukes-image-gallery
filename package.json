@@ -2,18 +2,13 @@
   "name": "lukes-image-gallery",
   "version": "1.2.0",
   "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "Luke Bajda",
   "main": "index.js",
-  "targets": {
-    "development": {
-      "source": "src/index.html"
-    }
-  },
   "scripts": {
     "serve": "parcel serve --target development --open chrome"
   },
-  "keywords": [],
-  "author": "Luke Bajda",
-  "license": "ISC",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -26,6 +21,11 @@
       "last 1 safari version"
     ]
   },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-infinite-scroll-component": "^6.1.0"
+  },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.10.2",
     "autoprefixer": "^10.4.16",
@@ -35,9 +35,9 @@
     "process": "^0.11.10",
     "tailwindcss": "^3.3.5"
   },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-infinite-scroll-component": "^6.1.0"
+  "targets": {
+    "development": {
+      "source": "src/index.html"
+    }
   }
 }
