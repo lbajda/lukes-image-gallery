@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/lbajda/lukes-image-gallery/compare/v1.2.0...v1.3.0) (2023-11-05)
+
+
+### Features
+
+* **main:** :sparkles: update 4 files and create 4 files ([70d07f1](https://github.com/lbajda/lukes-image-gallery/commit/70d07f1937ccddbdc9b8a3118480de2553d5d28a))
+
 ## [1.2.0](https://github.com/lbajda/lukes-image-gallery/compare/v1.1.0...v1.2.0) (2023-11-05)
 
 
