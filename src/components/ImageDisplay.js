@@ -32,7 +32,7 @@ function ImageDisplay({ images }) {
             <div className='blur-md absolute -inset-2 rounded-3xl bg-gray-500/40 z-0 invert-0'></div>
             <a
               className='flex items-center space-x-4 relative'
-              href={image.user.links.self}
+              href={image.user.links.html}
               target='_blank'
               rel='noopener noreferrer'>
               <img
