@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/lbajda/lukes-image-gallery/compare/v1.4.0...v1.4.1) (2023-11-07)
+
+
+### Bug Fixes
+
+* **main:** :bug: Fix link to user profile in ImageDisplay component ([edbee1a](https://github.com/lbajda/lukes-image-gallery/commit/edbee1a351f5254fa7a63859d8240fca7ab24a3d))
+
 ## [1.4.0](https://github.com/lbajda/lukes-image-gallery/compare/v1.3.0...v1.4.0) (2023-11-07)
 
 
