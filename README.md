@@ -19,14 +19,49 @@ npm install
 ## Usage
 
 ```sh
-npm run serve
+npm run start
 ```
 
-## Run tests
+## Build
 
 ```sh
-npm run test
+npm run build
 ```
+
+## Deploy
+
+```sh
+npm run predeploy
+```
+
+```sh
+npm run deploy
+```
+
+## Source files
+    .
+    ├── lukes-image-gallery
+    │   ├── src
+    │       ├── assets
+    │           ├── Inter
+    │       ├── components
+    │           ├── GithubLink.js
+    │           ├── ImageDisplay.js
+    │           ├── SearchForm.js
+    │       ├── api.js
+    │       ├── App.js
+    │       ├── idex.css
+    │       ├── idex.html
+    │       ├── idex.js
+    │       ├── useImageSearch.js
+    │   ├── .editorconfig
+    │   ├── .env
+    │   ├── .postcssrc
+    │   ├── .prettierrc
+    │   ├── package.json
+    │   ├── postcss.config.js
+    │   ├── tailwind.config.js
+    │
 
 ## Author
 
