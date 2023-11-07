@@ -1,7 +1,6 @@
 /**
  * This file contains the Tailwind CSS styles for Luke's image gallery project.
- * It includes base styles for the HTML document, font-face declarations for the Inter font family,
- * and component styles for buttons, inputs, and images.
+ * It includes base styles for the HTML document, font-face declarations for the Inter font family, and component styles for buttons, inputs, and images.
  */
 @tailwind base;
 @tailwind components;
@@ -39,19 +38,19 @@
 
 @layer components {
   .btn {
-    @apply px-5 py-2.5 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-medium text-base outline-none transition-all duration-300 focus:outline-none focus:ring-4;
+    @apply px-5 py-2.5 inline-flex justify-center items-center gap-2 rounded-lg border border-transparent font-medium text-base outline-none transition-all duration-300 focus:outline-none focus:ring-4;
     @apply ring-opacity-75 !important;
   }
 
   .btn-primary {
-    @apply bg-indigo-500 text-white hover:text-white hover:bg-indigo-700 focus:ring-indigo-300 dark:bg-indigo-200 dark:hover:bg-indigo-300 dark:text-indigo-700 dark:hover:text-indigo-900 dark:focus:ring-indigo-300;
+    @apply bg-indigo-500 text-white hover:text-white hover:bg-indigo-700 focus:ring-indigo-300;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-red-700 border-red-700 hover:bg-red-700 hover:text-white hover:border-x-red-700 focus:ring-red-300;
   }
 
   .default-input {
-    @apply py-3 px-4 block w-full rounded-md text-sm outline-none transition-all duration-300 border border-gray-200 text-gray-500 focus:border-gray-300/75 focus:outline-none focus:ring-4 focus:ring-gray-300 focus:!ring-opacity-75;
-  }
-
-  .img-cover {
-    @apply object-cover w-full h-full;
+    @apply py-3 px-4 block w-full rounded-lg text-sm outline-none transition-all duration-300 border border-gray-200 text-gray-500 focus:border-gray-300/75 focus:outline-none focus:ring-4 focus:ring-gray-300 focus:!ring-opacity-75;
   }
 }

@@ -1,0 +1,25 @@
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+# Set default charset
+[*.{js,py,md}]
+charset = utf-8
+
+# 2 space indentation for JavaScript and Python files
+[*.js]
+indent_style = space
+indent_size = 2
+
+[*.py]
+indent_style = space
+indent_size = 2
+
+# Ignore style rules for markdown files
+[*.md]
+max_line_length = off
+trim_trailing_whitespace = false

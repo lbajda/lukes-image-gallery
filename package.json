@@ -1,51 +1,59 @@
 {
-  "name": "lukes-image-gallery",
-  "version": "1.3.0",
-  "description": "",
-  "keywords": [],
-  "license": "ISC",
-  "author": "Luke Bajda",
-  "main": "index.js",
-  "scripts": {
-    "serve": "parcel serve --target development --open chrome",
-    "build": "parcel build  --target production --public-url ./",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-infinite-scroll-component": "^6.1.0"
-  },
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.10.2",
-    "autoprefixer": "^10.4.16",
-    "gh-pages": "^6.0.0",
-    "lodash": "^4.17.21",
-    "parcel": "latest",
-    "postcss": "^8.4.31",
-    "process": "^0.11.10",
-    "tailwindcss": "^3.3.5"
-  },
-  "targets": {
-    "development": {
-      "source": "src/index.html"
+    "name": "lukes-image-gallery",
+    "version": "1.3.0",
+    "description": "",
+    "keywords": [],
+    "license": "ISC",
+    "author": "Luke Bajda",
+    "main": "index.js",
+    "scripts": {
+        "start": "parcel --target development --open chrome",
+        "build": "parcel build  --target production --public-url ./",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
-    "production": {
-      "source": "src/index.html",
-      "distDir": "build"
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "dependencies": {
+        "@emotion/styled": "^11.11.0",
+        "@headlessui/react": "^1.7.17",
+        "@heroicons/react": "^2.0.18",
+        "@mui/icons-material": "^5.14.16",
+        "@tailwindcss/aspect-ratio": "^0.4.2",
+        "@tailwindcss/forms": "^0.5.6",
+        "axios": "^1.6.0",
+        "blurhash": "^2.0.5",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@parcel/transformer-sass": "^2.10.2",
+        "autoprefixer": "^10.4.16",
+        "buffer": "^6.0.3",
+        "gh-pages": "^6.0.0",
+        "lodash": "^4.17.21",
+        "parcel": "latest",
+        "postcss": "^8.4.31",
+        "process": "^0.11.10",
+        "tailwindcss": "^3.3.5"
+    },
+    "targets": {
+        "development": {
+            "source": "src/index.html"
+        },
+        "production": {
+            "source": "src/index.html",
+            "distDir": "build"
+        }
     }
-  }
 }
