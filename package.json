@@ -8,7 +8,7 @@
     "main": "index.js",
     "scripts": {
         "start": "parcel --target development --open chrome",
-        "build": "parcel build  --target production --public-url ./",
+        "build": "parcel build --target production --public-url ./",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build"
     },
