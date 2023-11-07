@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/lbajda/lukes-image-gallery/compare/v1.3.0...v1.4.0) (2023-11-07)
+
+
+### Features
+
+* **main:** :sparkles: add 5 files, removed 4 files, and modified 10 others ([1c60466](https://github.com/lbajda/lukes-image-gallery/commit/1c604666d3e4fe8b7685939632f4f80fdb75f34b))
+
 ## [1.3.0](https://github.com/lbajda/lukes-image-gallery/compare/v1.2.0...v1.3.0) (2023-11-05)
 
 
