@@ -1,16 +1,23 @@
 {
     "name": "lukes-image-gallery",
     "version": "1.5.1",
-    "description": "",
-    "keywords": [],
-    "license": "ISC",
+    "private": true,
+    "description": "A simple image gallery built with React, TailwindCSS and Parcel.",
+    "homepage": "https://lbajda.github.io/lukes-image-gallery/",
+    "bugs": {
+        "url": "https://github.com/lbajda/lukes-image-gallery/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lbajda/lukes-image-gallery.git"
+    },
+    "license": "MIT",
     "author": "Luke Bajda",
-    "main": "index.js",
     "scripts": {
-        "start": "parcel --target development --open chrome",
         "build": "parcel build --target production --public-url ./",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d build"
+        "deploy": "gh-pages -d build",
+        "start": "parcel --target development --open chrome"
     },
     "browserslist": {
         "production": [
