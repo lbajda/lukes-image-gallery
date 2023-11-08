@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/lbajda/lukes-image-gallery/compare/v1.5.0...v1.5.1) (2023-11-08)
+
+
+### Miscellaneous Chores
+
+* release 1.5.1 ([dc8ade4](https://github.com/lbajda/lukes-image-gallery/commit/dc8ade4f575e96029295c789801b3a73e8d7fda1))
+
 ## [1.5.0](https://github.com/lbajda/lukes-image-gallery/compare/v1.4.2...v1.5.0) (2023-11-08)
 
 
