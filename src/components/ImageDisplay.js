@@ -20,7 +20,7 @@ function ImageDisplay({ images }) {
   return images.map((image) => (
     <div
       key={image.id}
-      className='rounded-lg shadow-md overflow-hidden flex-1 w-auto min-w-[30%] max-w-sm lg:max-w-none lg:max-h-[50vh] relative'>
+      className='rounded-lg shadow-md overflow-hidden flex-1 w-auto min-w-[100%] md:min-w-[50%] lg:min-w-[30%] max-w-sm lg:max-w-none lg:max-h-[50vh] relative'>
       {image.urls && (
         <>
           <img
