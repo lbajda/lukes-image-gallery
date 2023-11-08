@@ -16,36 +16,36 @@ function SearchForm({
   handleInputChange,
   handleClear,
 }) {
+  const isSearchTermEmpty = searchTerm === ''
+
   return (
-    <div className='relative isolate overflow-hidden py-16'>
-      <div className='mx-auto max-w-7xl px-6'>
-        <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none '>
-          <div className='max-w-xl lg:max-w-lg mx-auto'>
-            <form onSubmit={handleFormSubmit} className='flex max-w-md gap-x-4'>
-              <label htmlFor='searchInput' className='sr-only'>
-                Search for an image
-              </label>
-              <input
-                id='searchInput'
-                className='default-input'
-                type='text'
-                value={searchTerm}
-                onChange={handleInputChange}
-                placeholder='Search Anything...'
-              />
-              <button type='submit' className='btn btn-primary'>
-                Search
-              </button>
-              <button
-                type='button'
-                onClick={handleClear}
-                className='btn btn-secondary p-2.5'>
-                <ClearIcon fontSize='medium' />
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
+    <div className='relative px-6 py-16 self-stretch'>
+      <form
+        onSubmit={handleFormSubmit}
+        className='flex w-full max-w-lg mx-auto gap-x-4'>
+        <label htmlFor='searchInput' className='sr-only'>
+          Search for an image
+        </label>
+        <input
+          id='searchInput'
+          className='default-input flex-auto w-full'
+          type='text'
+          value={searchTerm}
+          onChange={handleInputChange}
+          placeholder='Search Anything...'
+        />
+        <button type='submit' className='btn btn-primary'>
+          Search
+        </button>
+        {isSearchTermEmpty ? null : (
+          <button
+            type='button'
+            onClick={handleClear}
+            className='btn btn-secondary p-2.5'>
+            <ClearIcon fontSize='medium' />
+          </button>
+        )}
+      </form>
     </div>
   )
 }

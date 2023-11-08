@@ -14,10 +14,10 @@
     "license": "MIT",
     "author": "Luke Bajda",
     "scripts": {
+        "start": "parcel --target development --open chrome",
         "build": "parcel build --target production --public-url ./",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
-        "start": "parcel --target development --open chrome"
+        "deploy": "gh-pages -d build"
     },
     "browserslist": {
         "production": [
