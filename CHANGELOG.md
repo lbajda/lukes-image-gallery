@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.2](https://github.com/lbajda/lukes-image-gallery/compare/v1.4.1...v1.4.2) (2023-11-08)
+
+
+### Performance Improvements
+
+* **main:** :heavy_plus_sign: Add parcel-reporter-clean-dist to .parcelrc and package.json ([29a7a7b](https://github.com/lbajda/lukes-image-gallery/commit/29a7a7b0b722bbad2e0dec72f71465a8292661ba))
+
 ## [1.4.1](https://github.com/lbajda/lukes-image-gallery/compare/v1.4.0...v1.4.1) (2023-11-07)
 
 
